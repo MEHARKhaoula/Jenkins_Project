@@ -12,7 +12,7 @@ pipeline {
 
         success {
           script {
-            message="Success"
+            message="Succes"
           }
 
         }
