@@ -44,6 +44,7 @@ pipeline {
                }
 
           }
+          }
         }
 
         stage('Test Reporting') {
