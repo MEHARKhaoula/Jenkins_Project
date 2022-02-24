@@ -27,7 +27,11 @@ pipeline {
       }
     }
 
-
+    stage('Mail Notification') {
+      steps {
+        mail(subject: 'Build Notification', body: "${message}", from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
+      }
+    }
 
     stage('Code Analysis') {
       parallel {
@@ -77,12 +81,6 @@ pipeline {
         slackSend(baseUrl: 'https://hooks.slack.com/services/', token: '', message: "${messageSlack}", username: 'lam', channel: '', attachments: '', blocks: 'team', sendAsText: true, teamDomain: 'tpoglgroupe.slack.com')
       }
     }
-
-       stage('Mail Notification') {
-          steps {
-            mail(subject: 'Build Notification', body: "j'ai envoyé un message", from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
-          }
-        }
 
   }
 }
