@@ -80,7 +80,7 @@ pipeline {
     }
  stage('Mail Notification') {
       steps {
-        mail(subject: 'Notification Projet', body: "${message}", from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
+        mail(subject: 'Notification Mail', body: "${message}", from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
       }
     }
   }
