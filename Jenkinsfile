@@ -58,7 +58,7 @@ pipeline {
 stage('Quality gate') {
       post {
         failure {
-          mail(subject: 'Erreur Quality Gate', body: 'Hi, Quality gate is failed.', from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
+          mail(subject: 'Erreur Quality Gate', body: 'Hello friends, Quality gate is failed.', from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
         }
 
       }
