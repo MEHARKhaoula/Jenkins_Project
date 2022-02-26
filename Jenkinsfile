@@ -30,7 +30,7 @@ pipeline {
 
  stage('Mail Notification') {
       steps {
-        mail(subject: 'Notification Mail', body: "${message}", from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
+        mail(subject: 'Notification Build', body: "${message}", from: 'ik_mehar@esi.dz', to: 'ik_mehar@esi.dz')
       }
     }
     stage('Code Analysis') {
