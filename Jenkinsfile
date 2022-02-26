@@ -76,7 +76,7 @@ stage('Quality gate') {
 
     stage('Slack Notification') {
       steps {
-        slackSend(baseUrl: 'https://hooks.slack.com/services/', token: 'T02T8KCN5DY/B02T22U3D8W/sn96ULIXJfQN7FOkx21nm84s', message: "Le deploiment de l'API a été effectué ", username: 'ik_mehar', channel: '#tp-ogl',  blocks: 'team', sendAsText: true, )
+        slackSend(baseUrl: 'https://hooks.slack.com/services/', token: 'T02T8KCN5DY/B02T22U3D8W/sn96ULIXJfQN7FOkx21nm84s', message: "Le deploiment de l'API a ete effectue ", username: 'ik_mehar', channel: '#tp-ogl',  blocks: 'team', sendAsText: true, )
       }
     }
 
